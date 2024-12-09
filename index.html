@@ -1,42 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Voice Biometric Authentication</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to SuryaLearn</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Body & Background */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    h1, h2, p {
+      font-weight: normal;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #6e7f96, #b0d3d1);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    .cta-button {
+      background-color: #ff7b7b;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #f15c5c;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      color: #555;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #ff7b7b;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+      }
+
+      .about h2 {
+        font-size: 2rem;
+      }
+
+      .about p {
+        font-size: 1rem;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Voice Biometric Authentication</h1>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to SuryaLearn</h1>
+    <p>Your one-stop platform to master deep learning models, AI, and more.</p>
+    <a href="#about" class="cta-button">Learn More</a>
+  </section>
 
-    <section class="intro">
-        <h2>About the Model</h2>
-        <p>This Voice Biometric Authentication model uses deep learning to identify speakers and detect gender from voice data. It extracts features like MFCCs, chroma, and spectral contrast to make accurate predictions.</p>
-    </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About This Website</h2>
+    <p>
+      SuryaLearn is dedicated to providing you with cutting-edge resources and tutorials on deep learning models and AI technologies. Whether you're a beginner or an expert, you'll find valuable insights, project ideas, and helpful guides that can help you advance your knowledge in the field of artificial intelligence.
+    </p>
+  </section>
 
-    <section class="author">
-        <h2>About the Author</h2>
-        <p>The model was developed by Surya Tatikayala , a passionate machine learning engineer with a focus on voice recognition and AI. Devops engineer working in Kydnry india pvt ltd</p>
-    </section>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 SuryaLearn. All rights reserved.</p>
+    <p>Developed by <a href="https://github.com/yourusername" target="_blank">Your Name</a></p>
+  </footer>
 
-    <section class="details">
-        <h2>Technical Details</h2>
-        <p>The model uses LSTM (Long Short-Term Memory) networks for speaker identification and gender prediction. It has been trained on a large dataset of voice samples and utilizes popular Python libraries such as <strong>Librosa</strong>, <strong>TensorFlow</strong>, and <strong>Scikit-learn</strong> for preprocessing and prediction tasks.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
-    
-    <section class="model-diagram">
-        <h2>Model Architecture</h2>
-        <img src="images\journey_spk.png" alt="Model Diagram">
-        <p>This is the architecture of the voice biometric authentication model.</p>
-    </section>
-    
 </body>
 </html>
